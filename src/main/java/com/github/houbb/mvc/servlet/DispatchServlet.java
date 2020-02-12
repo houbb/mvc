@@ -1,6 +1,5 @@
 package com.github.houbb.mvc.servlet;
 
-import com.github.houbb.heaven.util.util.ArrayUtil;
 import com.github.houbb.mvc.annotation.Controller;
 import com.github.houbb.mvc.annotation.RequestMapping;
 import com.github.houbb.mvc.annotation.RequestParam;
@@ -76,7 +75,6 @@ public class DispatchServlet extends HttpServlet {
     /**
      * 初始化配置信息
      * （1）spring-mvc 一般是指定一个 xml 文件。
-     * <p>
      * 至于各种 classpath，我们也可以对其进行特殊处理，暂时简单化。
      *
      * @param config 配置信息
@@ -102,7 +100,6 @@ public class DispatchServlet extends HttpServlet {
      */
     private void initInstance(final String basePackage) {
         String path = basePackage.replaceAll("\\.", "/");
-        System.out.println(path +" is path");
         URL url = this.getClass().getClassLoader().getResource(path);
         if (null == url) {
             throw new MvcRuntimeException("base package can't loaded!");
@@ -274,7 +271,7 @@ public class DispatchServlet extends HttpServlet {
      */
     private static String getParamName(final int index, final Annotation[] annotations) {
         final String defaultName = "arg"+index;
-        if(ArrayUtil.isEmpty(annotations)) {
+        if(annotations == null) {
             return defaultName;
         }
 

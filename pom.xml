@@ -71,15 +71,14 @@
         <!--============================== SELF ==============================-->
 
         <!--============================== INTER ==============================-->
-        <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>heaven</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>asm-tool</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.houbb</groupId>-->
+            <!--<artifactId>heaven</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.houbb</groupId>-->
+            <!--<artifactId>asm-tool</artifactId>-->
+        <!--</dependency>-->
 
         <!--============================== OTHER ==============================-->
         <dependency>
