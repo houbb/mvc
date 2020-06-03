@@ -6,8 +6,13 @@
 
     <groupId>com.github.houbb</groupId>
     <artifactId>mvc</artifactId>
-    <packaging>war</packaging>
-    <version>0.0.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>0.0.2</version>
+    <modules>
+        <module>mvc-annotation</module>
+        <module>mvc-core</module>
+        <module>mvc-test</module>
+    </modules>
 
     <properties>
         <!--============================== All Plugins START ==============================-->
@@ -26,7 +31,8 @@
         <project.compiler.level>1.7</project.compiler.level>
 
         <!--============================== INTER ==============================-->
-        <heaven.version>0.1.77</heaven.version>
+        <heaven.version>0.1.105</heaven.version>
+        <asm-tool.version>0.0.2</asm-tool.version>
 
         <!--============================== OTHER ==============================-->
         <junit.version>4.12</junit.version>
@@ -36,6 +42,16 @@
     <dependencyManagement>
         <dependencies>
             <!--============================== SELF ==============================-->
+            <dependency>
+                <groupId>com.github.houbb</groupId>
+                <artifactId>mvc-annotation</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.houbb</groupId>
+                <artifactId>mvc-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!--============================== INTER ==============================-->
             <dependency>
@@ -46,7 +62,7 @@
             <dependency>
                 <groupId>com.github.houbb</groupId>
                 <artifactId>asm-tool</artifactId>
-                <version>0.0.2</version>
+                <version>${asm-tool.version}</version>
             </dependency>
 
             <!--============================== OTHER ==============================-->
@@ -61,50 +77,16 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+                <optional>true</optional>
                 <scope>test</scope>
             </dependency>
 
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <!--============================== SELF ==============================-->
-
-        <!--============================== INTER ==============================-->
-        <!--<dependency>-->
-            <!--<groupId>com.github.houbb</groupId>-->
-            <!--<artifactId>heaven</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.github.houbb</groupId>-->
-            <!--<artifactId>asm-tool</artifactId>-->
-        <!--</dependency>-->
-
-        <!--============================== OTHER ==============================-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
-    </dependencies>
-
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <port>8080</port>
-                    <path>/</path>
-                    <uriEncoding>${project.build.sourceEncoding}</uriEncoding>
-                </configuration>
-            </plugin>
+
 
             <!--compiler plugin -->
             <plugin>
