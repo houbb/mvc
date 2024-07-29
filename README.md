@@ -99,10 +99,46 @@ public class IndexController {
 
 - [ ] IOC 与 MVC 整合
 
-# 拓展框架
+# 拓展阅读
 
-[template](https://github.com/houbb/template)
+[Java Servlet 教程-20-自己手写实现 spring mvc 整体思路](https://houbb.github.io/2018/09/27/java-servlet-tutorial-20-fake-mvc)
 
-[cola](https://github.com/houbb/cola)
+[Java Servlet 教程-21-自己手写 spring mvc 简单实现](https://houbb.github.io/2018/09/27/java-servlet-tutorial-21-fake-mvc-simple)
 
-[ioc](https://github.com/houbb/ioc)
+[Spring Web MVC-00-重学 mvc 系列](https://houbb.github.io/2019/12/25/springmvc-00-index)
+
+[mvc-01-Model-View-Controller 概览](https://houbb.github.io/2016/05/14/mvc-01-overview)
+
+[web mvc-03-JFinal](https://houbb.github.io/2016/05/14/mvc-03-jfinal-intro)
+
+[web mvc-04-Apache Wicket](https://houbb.github.io/2016/05/14/mvc-04-apache-whicket-intro)
+
+[web mvc-05-JSF JavaServer Faces](https://houbb.github.io/2016/05/14/mvc-05-jsf-intro)
+
+[web mvc-06-play framework intro](https://houbb.github.io/2016/05/14/mvc-06-play-framework-intro)
+
+[web mvc-07-Vaadin](https://houbb.github.io/2016/05/14/mvc-07-Vaadin)
+
+[web mvc-08-Grails](https://houbb.github.io/2016/05/14/mvc-08-Grails)
+
+# 从零手写组件系列
+
+[java 从零手写 spring ioc 控制反转](https://github.com/houbb/ioc)
+
+[java 从零手写 spring mvc](https://github.com/houbb/mvc)
+
+[java 从零手写 jdbc-pool 数据库连接池](https://github.com/houbb/jdbc-pool)
+
+[java 从零手写 mybatis](https://github.com/houbb/mybatis)
+
+[java 从零手写 hibernate](https://github.com/houbb/hibernate)
+
+[java 从零手写 rpc 远程调用](https://github.com/houbb/rpc)
+
+[java 从零手写 mq 消息组件](https://github.com/houbb/rpc)
+
+[java 从零手写 cache 缓存](https://github.com/houbb/cache)
+
+[java 从零手写 nginx4j](https://github.com/houbb/nginx4j)
+
+[java 从零手写 tomcat](https://github.com/houbb/minicat)
